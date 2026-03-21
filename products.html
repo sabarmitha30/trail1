@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Products</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<header>
+    <h1>Our Products</h1>
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="products.html">Products</a>
+        <a href="cart.html">Cart</a>
+        <a href="contact.html">Contact</a>
+    </nav>
+</header>
+
+<section>
+    <div class="product">
+        <img src="images/shoe.jpg" width="200">
+        <h3>Running Shoes</h3>
+        <p>₹1999</p>
+        <button onclick="addToCart('Running Shoes',1999)">Add to Cart</button>
+    </div>
+
+    <div class="product">
+        <img src="images/watch.jpg" width="200">
+        <h3>Smart Watch</h3>
+        <p>₹2999</p>
+        <button onclick="addToCart('Smart Watch',2999)">Add to Cart</button>
+    </div>
+
+    <div class="product">
+        <img src="images/bag.jpg" width="200">
+        <h3>Backpack</h3>
+        <p>₹1499</p>
+        <button onclick="addToCart('Backpack',1499)">Add to Cart</button>
+    </div>
+</section>
+
+<script src="js/script.js"></script>
+</body>
+</html>
