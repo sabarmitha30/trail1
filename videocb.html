@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Cyber Security Course</title>
+
+<style>
+body {
+    margin: 0;
+    font-family: Arial;
+    background: #0f172a;
+    color: white;
+}
+
+.container {
+    display: flex;
+    height: 100vh;
+}
+
+/* Sidebar */
+.sidebar {
+    width: 30%;
+    background: #020617;
+    padding: 20px;
+}
+
+.video-item {
+    background: #1e293b;
+    padding: 12px;
+    margin-bottom: 10px;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.video-item:hover {
+    background: #22c55e;
+    color: black;
+}
+
+/* Main */
+.main {
+    width: 70%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.thumbnail {
+    text-align: center;
+}
+
+.thumbnail img {
+    width: 80%;
+    border-radius: 12px;
+}
+
+.play-btn {
+    margin-top: 20px;
+    padding: 12px 20px;
+    background: #22c55e;
+    border: none;
+    color: white;
+    border-radius: 8px;
+    cursor: pointer;
+}
+</style>
+
+</head>
+<body>
+
+<div class="container">
+
+    <!-- Sidebar -->
+    <div class="sidebar">
+        <h2>?? Cyber Security</h2>
+
+        <div class="video-item" onclick="openVideo(0)">
+            1?? Intro & Importance
+        </div>
+
+        <div class="video-item" onclick="openVideo(900)">
+            2?? Cyber Attacks (Malware, Phishing)
+        </div>
+
+        <div class="video-item" onclick="openVideo(1800)">
+            3?? Network Security & Attacks
+        </div>
+
+        <div class="video-item" onclick="openVideo(2700)">
+            4?? Protection & Career
+        </div>
+
+    </div>
+
+    <!-- Main -->
+    <div class="main">
+
+        <div class="thumbnail">
+            <img src="https://img.youtube.com/vi/OYdLN46JjNI/maxresdefault.jpg">
+            <br>
+            <button class="play-btn" onclick="openVideo(0)">
+                ? Start Course
+            </button>
+        </div>
+
+    </div>
+
+</div>
+
+<script>
+
+let videoId = "OYdLN46JjNI";
+
+function openVideo(seconds) {
+    let url = "https://youtu.be/" + videoId + "?t=" + seconds;
+    window.open(url, "_blank");
+}
+
+</script>
+
+</body>
+</html>

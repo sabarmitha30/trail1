@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>PICK YOUR LEARNING TRACK</title>
+
+<style>
+body {
+    font-family: Arial, sans-serif;
+    background: #f5f5f5;
+}
+
+/* Container */
+.course-container {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+    padding: 40px;
+}
+
+/* Card */
+.course-card {
+    height: 200px;
+    border-radius: 12px;
+    color: white;
+    display: flex;
+    align-items: flex-end;
+    padding: 15px;
+    font-size: 20px;
+    font-weight: bold;
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    cursor: pointer;
+    overflow: hidden;
+}
+
+/* Dark overlay */
+.course-card::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0,0,0,0.5);
+}
+
+/* Text above overlay */
+.course-card span {
+    position: relative;
+    z-index: 2;
+}
+
+/* Hover effect */
+.course-card:hover {
+    transform: scale(1.05);
+    transition: 0.3s;
+}
+
+/* ?? Quote Section */
+.quote-section {
+    margin-top: 50px;
+    padding: 30px;
+    text-align: center;
+    background: #222;
+    color: #fff;
+    font-size: 22px;
+    font-weight: bold;
+    border-radius: 10px;
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+}
+</style>
+
+</head>
+
+<body>
+
+<h2 style="text-align:center;">PICK YOUR LEARNING TRACK</h2>
+
+<div class="course-container">
+
+    <!-- Python -->
+    <div class="course-card" style="background-image: url('https://images.unsplash.com/photo-1515879218367-8466d910aaa4');">
+	<a = href="file:///C:/Users/Students/Documents/video1py.html">
+        <span>Python</span>
+    </div>
+
+    <!-- Cyber Security -->
+    <div class="course-card" style="background-image: url('https://images.unsplash.com/photo-1550751827-4bd374c3f58b');">
+	<a = href="file:///C:/Users/Students/Documents/videocb.html">
+        <span>Cyber Security</span>
+    </div>
+
+    <!-- DevOps -->
+    <div class="course-card" style="background-image: url('https://images.unsplash.com/photo-1605379399642-870262d3d051');">
+	<a = href="file:///C:/Users/Students/Documents/module4.html">
+        <span>DevOps</span>
+    </div>
+    
+    <!--AI-->
+    <div class="course-card" style="background-image: url('https://images.unsplash.com/photo-1677442136019-21780ecad995?auto=format&fit=crop&w=800&q=80');">
+   	<a = href="file:///C:/Users/Students/Documents/video4ai.html">
+        <span>Artificial Intelligence</span>
+    </div>
+
+</div>
+
+<!-- ?? Quote at Bottom -->
+<div class="quote-section">
+    "START YOUR LEARNING JOURNEY AND BUILD THE SKILLS THAT SHAPE YOUR SUCCESS."
+</div>
+
+</body>
+</html>

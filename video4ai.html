@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>AI / ML Course</title>
+
+<style>
+body {
+    margin: 0;
+    font-family: Arial;
+    background: #0f172a;
+    color: white;
+}
+
+.container {
+    display: flex;
+    height: 100vh;
+}
+
+/* Sidebar */
+.sidebar {
+    width: 30%;
+    background: #020617;
+    padding: 20px;
+    overflow-y: auto;
+}
+
+.video-item {
+    background: #1e293b;
+    padding: 12px;
+    margin-bottom: 10px;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.video-item:hover {
+    background: #a855f7;
+    color: white;
+}
+
+/* Main */
+.main {
+    width: 70%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.thumbnail {
+    text-align: center;
+}
+
+.thumbnail img {
+    width: 80%;
+    border-radius: 12px;
+}
+
+.play-btn {
+    margin-top: 20px;
+    padding: 12px 20px;
+    background: #a855f7;
+    border: none;
+    color: white;
+    border-radius: 8px;
+    cursor: pointer;
+}
+</style>
+
+</head>
+<body>
+
+<div class="container">
+
+    <!-- Sidebar -->
+    <div class="sidebar">
+        <h2>AI / ML Course</h2>
+
+        <div class="video-item" onclick="openVideo(0)">1?AI & ML Introduction</div>
+        <div class="video-item" onclick="openVideo(3600)">2? Python for AI</div>
+        <div class="video-item" onclick="openVideo(7200)">3? Data Processing</div>
+        <div class="video-item" onclick="openVideo(10800)">4? ML Algorithms</div>
+        <div class="video-item" onclick="openVideo(14400)">5? Supervised Learning</div>
+        <div class="video-item" onclick="openVideo(18000)">6? Deep Learning</div>
+        <div class="video-item" onclick="openVideo(21600)">7? Model Evaluation</div>
+        <div class="video-item" onclick="openVideo(25200)">8? AI Projects</div>
+        <div class="video-item" onclick="openVideo(28800)">9? Deployment</div>
+        <div class="video-item" onclick="openVideo(32400)">10 Career Roadmap</div>
+    </div>
+
+    <!-- Main -->
+    <div class="main">
+
+        <div class="thumbnail">
+            <img src="https://img.youtube.com/vi/9tbaiFIm0HU/maxresdefault.jpg">
+            <br>
+            <button class="play-btn" onclick="openVideo(0)">
+                ? Start Course
+            </button>
+        </div>
+
+    </div>
+
+</div>
+
+<script>
+
+let videoId = "9tbaiFIm0HU";
+
+function openVideo(seconds) {
+    let url = "https://youtu.be/" + videoId + "?t=" + seconds;
+    window.open(url, "_blank");
+}
+
+</script>
+
+</body>
+</html>
